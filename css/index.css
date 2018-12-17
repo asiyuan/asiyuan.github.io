@@ -20,6 +20,21 @@ body {
   transform: translate(-50%,-50%);
   z-index: 5;
 }
+.pic {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/tempCropped.jpeg");
+  background-size: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.pic:hover {
+  animation: rotate 0.5s linear infinite;
+}
+@keyframes rotate {
+  from{transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
+}
 h1 {
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   text-align: center;
